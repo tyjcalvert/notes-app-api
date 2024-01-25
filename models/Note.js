@@ -13,7 +13,7 @@ Note.init(
         },
         title: {
             type: DataTypes.STRING,
-            allowNull: false,
+            allowNull: true,
         },
         content: {
             type: DataTypes.STRING,

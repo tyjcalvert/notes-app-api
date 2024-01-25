@@ -12,6 +12,10 @@ app.use(cors());
 
 app.use(routes);
 
+app.use('*', (req, res) => {
+  res.status(404).json({ error: 'Route not found' });
+});
+
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening on port ' + PORT));
 });
