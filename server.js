@@ -13,7 +13,7 @@ app.use(cors());
 app.use(routes);
 
 app.use('*', (req, res) => {
-  res.status(404).json({ error: 'Route not found' });
+  res.status(404).json({ error: 'Hello World!' });
 });
 
 sequelize.sync({ force: false }).then(() => {
