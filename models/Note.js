@@ -17,7 +17,7 @@ Note.init(
         },
         content: {
             type: DataTypes.STRING,
-            allowNull: false,
+            allowNull: true,
         },
         isComplete: {
             type: DataTypes.BOOLEAN,
